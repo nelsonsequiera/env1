@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block body_block %}
+	<h2>{{ message }}</h2>
+	<img alt="tiger pic" src = "{% static "images/c.jpg" %}">
+	 <a href="{% url 'about' %}">About</a><br />
+	<a href = "{%url 'index' %}">Index</a>
+{% endblock %}
